@@ -24,4 +24,10 @@ task FunWebServer(type: JavaExec) {
   standardInput = System.in
 }
 
+dependencies {
+  implementation 'org.json:json:20210307' // Ensure this is included
+}
 
+repositories {
+    mavenCentral() // This allows Gradle to access Maven Central Repository
+}
